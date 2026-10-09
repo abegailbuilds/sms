@@ -64,9 +64,12 @@ while choice != 8:
 
             if courseToSearch in courses:
                 print("Course found!")
+            else:
 
-            StudentToSearch = input("Enter the name of the student to search: ")
-            print(students.get(regNo))
+                print("Course not found!")
+
+            studentToSearch = input("Enter the name of the student to search: ")
+            print(students.get(studentToSearch))
 
 
         case 6:
