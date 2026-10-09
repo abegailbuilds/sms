@@ -29,19 +29,20 @@ while choice != 8:
 
         case 2:
 
-            regNo=input("Enter Reg No for student to add: ")
-            for added in regNo:
+                regNo=input("Enter Reg No for students to add: ")
+
+
                 name=input("Enter Name: ")
-                unit=input("Enter Unit")
+                course_taking=input("Enter course: ")
                 age=int(input("Enter Age: "))
                 year=input("Enter Year: ")
 
                 students[regNo]={
                     "name":name,
-                    "unit": unit,
+                    "course_taking": course_taking,
                     "age": age,
                     "year":year
-                }
+                    }
 
 
 
@@ -68,7 +69,7 @@ while choice != 8:
 
                 print("Course not found!")
 
-            studentToSearch = input("Enter the name of the student to search: ")
+            studentToSearch = input("Enter the regNo of the student to search: ")
             print(students.get(studentToSearch))
 
 
@@ -80,7 +81,17 @@ while choice != 8:
 
         case 7:
 
-            studentToUpdate=input("Enter student to update: ")
+            studentToUpdate=input("Enter regNo for student to update: ")
+            newName=input("Enter new name: ")
+            newCourseTaking=input("Enter new course: ")
+            newAge=int(input("Enter new age: "))
+            newYear=input("Enter new year of study: ")
+
+            students["name"]=newName
+            students["units"]=newCourseTaking
+            students["age"]=newAge
+            students["year"]=newYear
+
 
 
         case 8:
