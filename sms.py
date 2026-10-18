@@ -451,5 +451,6 @@ print(next(gen))
 print(next(gen))
 
 
-
+def test():
+    return 1+2
 
